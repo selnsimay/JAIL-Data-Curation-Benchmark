@@ -1,0 +1,92 @@
+[
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id for A1BG?": "<answer>ENSG00000121410",
+        "What is the name of the gene A1BG?": "<answer>alpha-1-B glycoprotein",
+        "What are the aliases for the gene A1BG?": "<answer>A1B, ABG, GAB, HYST2477",
+        "What are the other names for the gene A1BG?": "<answer>HEL-S-163pA, alpha-1B-glycoprotein, epididymis secretory sperm binding protein Li 163pA",
+        "What is the description of the gene A1BG?": "<answer>The protein encoded by this gene is a plasma glycoprotein of unknown function. The protein shows sequence similarity to the variable regions of some immunoglobulin supergene family member proteins. [provided by RefSeq, Jul 2008].",
+        "What is the symbol for the gene with id ENSG00000121410?": "<answer>A1BG"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id of the gene that codes for APOBEC1 complementation factor?": "<answer>ENSG00000148584",
+        "What is the gene name of the gene with the symbol A1CF?": "<answer>APOBEC1 complementation factor",
+        "What are the aliases for the gene with the symbol A1CF?": "<answer>ACF, ACF64, ACF65, APOBEC1CF, ASP",
+        "What are the other names for the gene with the symbol A1CF?": "<answer>APOBEC-1 stimulating protein, APOBEC1 complementation factor, apo-B RNA editing protein, apobec-1 complementation factor (ACF) (ASP)"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene ID of the gene symbol A2M?": "<answer>ENSG00000175899",
+        "What is the name of the gene symbol A2M?": "<answer>alpha-2-macroglobulin",
+        "What are the aliases for the gene symbol A2M?": "<answer>A2MD, CPAMD5, FWP007, S863-7",
+        "What are other names for the gene symbol A2M?": "<answer>C3 and PZP-like alpha-2-macroglobulin domain-containing protein 5, alpha-2-M, alpha-2-macroglobulin"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id for alpha-2-macroglobulin like 1?": "<answer>ENSG00000166535",
+        "What is the gene name for ENSG00000166535?": "<answer>alpha-2-macroglobulin like 1",
+        "What are the aliases for alpha-2-macroglobulin like 1?": "<answer>CPAMD9, OMS, p170",
+        "What are the other names for alpha-2-macroglobulin like 1?": "<answer>C3 and PZP-like, alpha-2-macroglobulin domain containing 9, alpha-2-macroglobulin-like protein 1"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id of A3GALT2?": "<answer>ENSG00000184389",
+        "What is the name of the gene A3GALT2?": "<answer>alpha 1,3-galactosyltransferase 2",
+        "What are the synonyms for A3GALT2?": "<answer>A3GALT2P, IGB3S, IGBS3S",
+        "What are other names for A3GALT2?": "<answer>alpha 1,3-galactosyltransferase 2, pseudogene, alpha-1,3-galactosyltransferase 2, iGb3 synthase, isoglobotriaosylceramide synthase"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id for the gene alpha 1,4-galactosyltransferase (P1PK blood group)?": "<answer>ENSG00000128274",
+        "What is the symbol for the gene with gene id ENSG00000128274?": "<answer>A4GALT",
+        "What is the gene name for the gene with symbol A4GALT?": "<answer>alpha 1,4-galactosyltransferase (P1PK blood group)",
+        "What are the aliases for the gene alpha 1,4-galactosyltransferase (P1PK blood group)?": "<answer>A14GALT, A4GALT1, Gb3S, P(k), P1, P1PK, PK"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id of the gene with symbol A4GNT?": "<answer>ENSG00000118017",
+        "What is the name of the gene with symbol A4GNT?": "<answer>alpha-1,4-N-acetylglucosaminyltransferase",
+        "What are the aliases of the gene with symbol A4GNT?": "<answer>alpha4GnT",
+        "What are the other names of the gene with symbol A4GNT?": "<answer>alpha-1,4-N-acetylglucosaminyltransferase"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene id of the AAAS gene?": "<answer>ENSG00000291836",
+        "What is the gene name of the AAAS gene?": "<answer>aladin WD repeat nucleoporin",
+        "What are some other names for the AAAS gene?": "<answer>aladin, Allgrove, triple-A, achalasia, adrenocortical insufficiency, alacrimia",
+        "What are some alias symbols for the AAAS gene?": "<answer>AAA, AAASb, ADRACALA, ADRACALIN, ALADIN, GL003"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene ID of AACS?": "<answer>ENSG00000081760",
+        "What is the gene name of AACS?": "<answer>acetoacetyl-CoA synthetase",
+        "What are the alias symbols for the AACS gene?": "<answer>ACSF1, SUR-5",
+        "What are the other names for the AACS gene?": "<answer>acetoacetate-CoA ligase, acetoacetyl-CoA synthetase, acyl-CoA synthetase family member 1, homolog of C. elegans supressor of ras 5 (sur-5), protein sur-5 homolog",
+        "What is the description of the AACS gene?": "<answer>Predicted to enable acetoacetate-CoA ligase activity. Predicted to be involved in positive regulation of insulin secretion. Predicted to be active in cytosol. [provided by Alliance of Genome Resources, Apr 2022]"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene ID for the AADAC gene?": "<answer>ENSG00000114771",
+        "What is the gene name for the AADAC gene?": "<answer>arylacetamide deacetylase",
+        "What is the symbol for the gene with the gene ID ENSG00000114771?": "<answer>AADAC",
+        "What are some aliases for the AADAC gene?": "<answer>CES5A1, DAC",
+        "What are some other names for the AADAC gene?": "<answer>arylacetamide deacetylase, arylacetamide deacetylase (esterase)"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the Gene ID of arylacetamide deacetylase like 2?": "<answer>ENSG00000197953",
+        "What is the symbol for arylacetamide deacetylase like 2?": "<answer>AADACL2",
+        "What is the name of the gene with symbol AADACL2?": "<answer>arylacetamide deacetylase like 2",
+        "What are the other names for the gene arylacetamide deacetylase like 2?": "<answer>arylacetamide deacetylase-like 2",
+        "What is the predicted function and location of the gene arylacetamide deacetylase like 2?": "<answer>Predicted to enable hydrolase activity. Predicted to be located in extracellular region. Predicted to be integral component of membrane. [provided by Alliance of Genome Resources, Apr 2022]"
+    },
+    {
+        "question here": "<answer>answer here",
+        "What is the gene ID of the AADACL3 gene?": "<answer>ENSG00000188984",
+        "What is the symbol of the gene with the ID ENSG00000188984?": "<answer>AADACL3",
+        "What is the name of the gene with the ID ENSG00000188984?": "<answer>arylacetamide deacetylase like 3",
+        "What is another name for the AADACL3 gene?": "<answer>arylacetamide deacetylase-like 3",
+        "What is the predicted function and location of the AADACL3 gene?": "<answer>Predicted to enable hydrolase activity. Predicted to be integral component of membrane. [provided by Alliance of Genome Resources, Apr 2022]"
+    }
+]
