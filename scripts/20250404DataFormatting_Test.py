@@ -21,7 +21,7 @@ def answer_question_pairs(data):
     #question_key_map: mapping from questions to JSON keys
     question_key_map = {
         "1. What is the ENSEMBL id of {Name}?": "Gene_ID",
-        "2. What is the symbol of the gene with the ENSEMBL id of {Gene_ID}?": "Symbol",
+        "2. What is the symbol of {Name}}?": "Symbol",
         "3. What is the name of the gene with the symbol of {Symbol}?": "Name",
         "4. What are the other aliases for {Symbol}?": "Aliases",
         "5. What are the synonyms for the gene {Name}?": "Other names",
