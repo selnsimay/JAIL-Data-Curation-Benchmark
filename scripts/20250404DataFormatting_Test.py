@@ -61,7 +61,7 @@ def answer_question_pairs(data):
 qa_pairs = answer_question_pairs(dataset)
 
 #save the question-answer pairs to a JSON file
-output_file = '../data/qa_pairs.json'
+output_file = '../script/qa_pairs.json'
 
 with open(output_file, 'w') as f:
     json.dump(qa_pairs, f, indent=4)
