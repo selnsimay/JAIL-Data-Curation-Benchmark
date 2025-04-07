@@ -21,7 +21,7 @@ def answer_question_pairs(data):
     #question_key_map: mapping from questions to JSON keys
     question_key_map = {
         "1. What is the ENSEMBL id of {Name}?": "Gene_ID",
-        "2. What is the symbol of {Name}}?": "Symbol",
+        "2. What is the symbol of {Name}?": "Symbol",
         "3. What is the name of the gene with the symbol of {Symbol}?": "Name",
         "4. What are the other aliases for {Symbol}?": "Aliases",
         "5. What are the synonyms for the gene {Name}?": "Other names",
@@ -57,9 +57,17 @@ def answer_question_pairs(data):
 
     return qa_pairs
 
-#call the function to get the question-answer pairs
-qa_pairs = answer_question_pairs(dataset[:3])
-print(qa_pairs)
+#call the function to get the question-answer pairs. currently trying the first 3 elements
+qa_pairs = answer_question_pairs(dataset)
+
+#save the question-answer pairs to a JSON file
+output_file = '../data/qa_pairs.json'
+
+with open(output_file, 'w') as f:
+    json.dump(qa_pairs, f, indent=4)
+
+print(f"QA pairs saved to {output_file}")
+
 
  
     
