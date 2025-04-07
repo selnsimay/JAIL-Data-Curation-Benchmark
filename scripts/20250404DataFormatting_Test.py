@@ -11,13 +11,13 @@ def answer_question_pairs(dataset):
 
     Parameters
     ----------
-    dataset: dict of gene information
+    dataset: list of dictionaries, containing gene information
 
     Returns
     -------
     qa_pairs: dict of question and answer pairs
     """
-def answer_question_pairs(data):
+
     #question_key_map: mapping from questions to JSON keys
     question_key_map = {
         "1. What is the ENSEMBL id of {Name}?": "Gene_ID",
