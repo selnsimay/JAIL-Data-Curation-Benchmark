@@ -65,6 +65,7 @@ output_file = '../script/qa_pairs.json'
 
 with open(output_file, 'w') as f:
     json.dump(qa_pairs, f, indent=4)
+f.close()
 
 print(f"QA pairs saved to {output_file}")
 
