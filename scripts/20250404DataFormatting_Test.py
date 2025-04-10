@@ -20,19 +20,19 @@ def answer_question_pairs(dataset):
 
     #question_key_map: mapping from questions to JSON keys
     question_key_map = {
-        "1. What is the ENSEMBL id of {Name}?": "Gene_ID",
-        "2. What is the symbol of {Name}?": "Symbol",
-        "3. What is the name of the gene with the symbol of {Symbol}?": "Name",
-        "4. What are the other aliases for {Symbol}?": "Aliases",
-        "5. What are the synonyms for the gene {Name}?": "Other names",
-        "6. What is the function of the gene {Name}?": "Description"
+        "What is the ENSEMBL id of {Name}?": "Gene_ID",
+        "What is the symbol of {Name}?": "Symbol",
+        "What is the name of the gene with the symbol of {Symbol}?": "Name",
+        "What are the other aliases for {Symbol}?": "Aliases",
+        "What are the synonyms for the gene {Name}?": "Other names",
+        "What is the function of the gene {Name}?": "Description"
     }
 
     #initialize an empty list to store question-answer pairs
     qa_pairs = []
 
     #iterate through each entry in the dataset
-    for entry in data:
+    for entry in dataset:
         for question_template, answer_key in question_key_map.items():
             #some values in the dataset may be empty or "N/A", filter them out
             answer = entry.get(answer_key)
@@ -61,7 +61,7 @@ def answer_question_pairs(dataset):
 qa_pairs = answer_question_pairs(dataset)
 
 #save the question-answer pairs to a JSON file
-output_file = '../script/qa_pairs.json'
+output_file = '../qa_pairs.json'
 
 with open(output_file, 'w') as f:
     json.dump(qa_pairs, f, indent=4)
