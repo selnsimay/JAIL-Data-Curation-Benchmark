@@ -38,7 +38,7 @@ def answer_question_pairs(dataset):
             answer = entry.get(answer_key)
             if not answer or answer == "N/A":
                 continue
-
+ 
             #to personalize the question for the llm to separate them easily, format the question to accept keys
             try:
                 question = question_template.format(**entry)
@@ -61,7 +61,7 @@ def answer_question_pairs(dataset):
 qa_pairs = answer_question_pairs(dataset)
 
 #save the question-answer pairs to a JSON file
-output_file = '../qa_pairs.json'
+output_file = '../geneset_qa_pairs.json'
 
 with open(output_file, 'w') as f:
     json.dump(qa_pairs, f, indent=4)
