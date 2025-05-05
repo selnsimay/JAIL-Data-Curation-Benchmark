@@ -1,2 +1,2 @@
-# JAIL-Evaluation-Benchmark
+# JAIL-Data-Curation-Benchmark
 
