@@ -115,7 +115,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
 ### Requirements
 
-- Neo4j **v4.x** (version used in this repo: **neo4j-community-4.4.40**)
+- Neo4j (version used in this repo: **neo4j-community-4.4.40**)
 - Reactome graph database dump file (`reactome.graphdb.dump`)
 
 ---
