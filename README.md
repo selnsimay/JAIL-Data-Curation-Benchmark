@@ -133,7 +133,8 @@ Neo4j setup and Reactome database can be found here: https://reactome.org/dev/gr
 
 **Note:** After starting neo4j, you can listen in on the neo4j port from DGX by running the following command (make sure you are in the directory where neo4j is in)
 ``ssh -L 7474:localhost:7474 -L 7687:localhost:7687``
-12. When done, Stop Neo4j ``./path/to/neo4j/bin/neo4j start``
+
+12. When done, Stop Neo4j ``./path/to/neo4j/bin/neo4j stop``
 
 Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
 ## Acknowledgments
