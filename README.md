@@ -207,6 +207,11 @@ This project builds upon public biological resources and tools including:
 - [Neo4j](https://neo4j.com/) – for graph querying of biological entities
 - [DeepEval](https://github.com/confident-ai/deepeval) – for evaluating LLM performance
 
+**Additional thanks to:**
+- Anna Vlot
+- Peter Kruse
+- Daniel Jacobson
+- JAIL-LLM Team
 
 
 
