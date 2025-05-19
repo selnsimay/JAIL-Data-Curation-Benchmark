@@ -1,7 +1,7 @@
 # JAIL-Data-Curation-Benchmark
 ## Table of Contents
 1.  [Overview](#overview)
-2.  [Recommended Directory Structure](#recommended-directory-structure)
+2.  [Directory Structure](#directory-structure)
 3.  [Key Components](#key-components)
     *   [Notebooks](#notebooks)
     *   [Datasets](#datasets)
@@ -16,7 +16,7 @@ The core aim of the JAIL-Data-Curation-Benchmark is to:
 *   **Curate High-Quality Biological Datasets:** Systematically gather and process information about human genes, Gene Ontology terms, and biochemical reactions from public databases.
 *   **Prepare Data for LLM Training:** Transform curated data into formats suitable for supervised fine tuning, such as question-answer pairs.
 
-## Recommended Directory Structure
+## Directory Structure
 The following directory structure is recommended at the root of your project:
 ```
 JAIL-Data-Curation-Benchmark/
