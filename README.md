@@ -3,9 +3,8 @@
 1.  [Overview](#overview)
 2.  [Recommended Directory Structure](#recommended-directory-structure)
 3.  [Key Components](#key-components)
-    *   [Scripts](#scripts)
     *   [Notebooks](#notebooks)
-    *   [Data Files (Input and Output)](#data-files-input-and-output)
+    *   [Scripts](#scripts)
 4.  [Neo4j Setup and Querying](#neo4j-setup-and-querying)
 5.  [Acknowledgments](#acknowledgments)
 
@@ -16,6 +15,7 @@ The core aim of the JAIL-Data-Curation-Benchmark is to:
 *   **Curate High-Quality Biological Datasets:** Systematically gather and process information about human genes, Gene Ontology terms, and biochemical reactions from public databases.
 *   **Prepare Data for LLM Training:** Transform curated data into formats suitable for supervised fine tuning, such as question-answer pairs.
 
+## Recommended Directory Structure
 To ensure the scripts and notebooks run as intended with their current relative file paths (e.g., `../data/some_file.json`), the following directory structure is recommended at the root of your project:
 ```
 JAIL-Data-Curation-Benchmark/
