@@ -20,7 +20,7 @@ The core aim of the JAIL-Data-Curation-Benchmark is to:
 To ensure the scripts and notebooks run as intended with their current relative file paths (e.g., `../data/some_file.json`), the following directory structure is recommended at the root of your project:
 ```
 JAIL-Data-Curation-Benchmark/
-├── files/                     # **Critical: Place input files here & generated data will be saved here**
+├── files/                
 │   ├── (INPUT) hgnc_complete_set_2024-10-01.txt  # User must provide (update to the most recent file)
 │   ├── (INPUT) go-basic.obo                      # User must provide
 │   ├── (INPUT) goa_human.gaf                     # User must provide
