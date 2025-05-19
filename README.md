@@ -172,7 +172,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
 5. **Start the Neo4j Server**
    ```bash
-   ./path/to/neo4j/bin/neo4j start
+   ./path/to/neo4j/bin/neo4j start```
 
 
 **Note:** If accessing remotely, use SSH port forwarding from the machine where Neo4j is installed:
@@ -182,6 +182,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
 
 **Note:** Create a `.env` file in the **root directory** of the `JAIL-Data-Curation-Benchmark` project with your Neo4j credentials:
+        
         ```env
         # JAIL-Data-Curation-Benchmark/.env
         URI="bolt://your_neo4j_host:7687"
@@ -191,7 +192,7 @@ Information on how to query reactome database using Neo4j can be found here: htt
 
    6. **When done, Stop Neo4j**
       ```bash
-      ./path/to/neo4j/bin/neo4j stop
+      ./path/to/neo4j/bin/neo4j stop```
 
 ## Acknowledgments
 
