@@ -210,8 +210,15 @@ This project builds upon public biological resources and tools including:
 **Additional thanks to:**
 - Anna Vlot
 - Peter Kruse
+- Kyle Sullivan
+- Ken Smith
+- Matt Lane
+- John Dandy
+- Mirko Pavicic Venegas
+- Doug Hyatt
+- Chanaka R. Abeyratne
 - Daniel Jacobson
-- JAIL-LLM Team
+  
 
 
 
