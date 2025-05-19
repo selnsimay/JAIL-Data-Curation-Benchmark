@@ -111,7 +111,7 @@ Biochemical pathway data extracted from the **Reactome database** for human gene
 
 ## Neo4j Setup and Querying
 
-To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machine with multi-hop SSH access), follow the instructions below.
+To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machine with multi-hop SSH access), follow the instructions below. These setup instructions are adapted from the official Reactome documentation, available at: https://reactome.org/dev/graph-database#GetStarted
 
 ### Requirements
 
@@ -127,8 +127,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
 2. **Download the Reactome Graph Database Dump**  
    - Visit [https://reactome.org/download-data](https://reactome.org/download-data)
-   - Look for the **Graph Database** section
-   - Download the `reactome.graphdb.dump` file
+   - Download the Graph Database for the latest data release.
 
 3. **Install and Configure the Database**
    - Load the dump file into Neo4j:
