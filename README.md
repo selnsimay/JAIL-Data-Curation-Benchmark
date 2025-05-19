@@ -122,12 +122,31 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
 ### Installation Steps
 
-1. **Download Neo4j Community Edition v4.4.40**  
-   From the [Neo4j Download Center](https://neo4j.com/download-center/#community)
+1. **Download and Install Neo4j v4**
+   - Download Neo4j Community Edition v4.4.40 from:  
+     [https://neo4j.com/download-center/#community](https://neo4j.com/download-center/#community)
 
-2. **Download the Reactome Graph Database Dump**  
-   - Visit [https://reactome.org/download-data](https://reactome.org/download-data)
-   - Download the Graph Database for the latest data release.
+2. **Choose One of the Following Methods to Load Reactome Data**
+
+   #### Option A: Load from a Dump File (Recommended)
+
+   - Download the latest **graph database dump** from:  
+     [https://reactome.org/download-data](https://reactome.org/download-data)
+   - Load the dump file using the Neo4j Admin tool:
+     ```bash
+     ./path/to/neo4j/bin/neo4j-admin load --force --from=/path/to/reactome.graphdb.dump --database=graph.db
+     ```
+
+   #### Option B: Use the Extracted Graph Folder
+
+   - Download and extract the **graph folder archive** (e.g., `Reactome.graph.db.tar`)
+   - Move the extracted `graph.db` folder to:
+     ```
+     /path/to/neo4j/data/databases/
+     ```
+   - If a `graph.db` folder already exists, remove or rename it before replacing.
+
+---
 
 3. **Install and Configure the Database**
    - Load the dump file into Neo4j:
