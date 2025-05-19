@@ -4,6 +4,7 @@
 2.  [Recommended Directory Structure](#recommended-directory-structure)
 3.  [Key Components](#key-components)
     *   [Notebooks](#notebooks)
+    *   [Datasets](#datasets)
     *   [Scripts](#scripts)
 4.  [Neo4j Setup and Querying](#neo4j-setup-and-querying)
 5.  [Acknowledgments](#acknowledgments)
@@ -46,7 +47,23 @@ JAIL-Data-Curation-Benchmark/
 └── README.md
 ```
 ## Key Components
-### Gene Ontology Term Dataset
+### Notebooks
+1. **`notebooks/20240823_LLMeval_test_deepeval-checkpoint.ipynb`**
+    *   **Purpose:** To demonstrate and test the DeepEval framework for LLM evaluation.
+    *   **Description:** Sets up a custom Llama 3.1 70B model and uses DeepEval's `HallucinationMetric`. This notebook is more self-contained for its example but could be adapted to use the curated datasets.
+    *   **Status:** "Currently on pause."
+
+2. **`notebooks/20241007_GOterm_Information_Dataset_Dictionary.ipynb`**
+    *   **Purpose:** To create [Gene Ontology Term Dataset](#gene-ontology-term-dataset).
+
+3. **`notebooks/20241017Gene_Dataset.ipynb`**
+    *   **Purpose:** To create [Gene Information Dataset](#gene-information-dataset).
+
+4. **`/notebooks/20250219Gene_Reactions_Dataset.ipynb`**
+    *   **Purpose:** To create [Gene Pathway Dataset](#gene-pathway-dataset).
+
+### Datasets
+#### Gene Ontology Term Dataset
 
 A structured dataset of Gene Ontology (GO) terms in the **Biological Process (BP)** namespace.
 
@@ -59,7 +76,7 @@ A structured dataset of Gene Ontology (GO) terms in the **Biological Process (BP
 
 ---
 
-### Gene Information Dataset
+#### Gene Information Dataset
 
 Gene metadata curated using the **HGNC gene list** (as of *2024-10-01*) and enriched via the **MyGene.info API**.
 
@@ -73,7 +90,7 @@ Gene metadata curated using the **HGNC gene list** (as of *2024-10-01*) and enri
 
 ---
 
-### Gene Pathway Dataset
+#### Gene Pathway Dataset
 
 Biochemical pathway data extracted from the **Reactome database** for human genes.
 
@@ -86,6 +103,11 @@ Biochemical pathway data extracted from the **Reactome database** for human gene
     - `outputs`: Molecules produced
     - `catalysts`: Entities that facilitate the reaction
     - `regulators`: Positive/negative regulators involved
+
+### Scripts
+1.  **`scripts/20250404GeneInfo_DataFormatting.py`**
+    *   **Purpose:** To transform a structured gene information dataset (JSON) into a list of question-answer pairs.
+    *   **Description:** This script reads a JSON file containing detailed information for multiple genes (expected from `data/geneset_dict.json`). It then iterates through each gene entry and, using a predefined mapping of question templates to JSON keys, generates specific questions about each gene. The corresponding values from the gene's data are used as answers.
 
 ## Neo4j Setup and Querying
 
