@@ -190,7 +190,8 @@ Information on how to query reactome database using Neo4j can be found here: htt
         PASSWORD="your_neo4j_password"
         ```
 
-12. When done, Stop Neo4j ``./path/to/neo4j/bin/neo4j stop``
+   6. **When done, Stop Neo4j**
+      ```./path/to/neo4j/bin/neo4j stop``
 
 ## Acknowledgments
 
