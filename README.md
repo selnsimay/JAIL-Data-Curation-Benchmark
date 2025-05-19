@@ -111,28 +111,56 @@ Biochemical pathway data extracted from the **Reactome database** for human gene
 
 ## Neo4j Setup and Querying
 
-Neo4j setup and Reactome database can be found here: https://reactome.org/dev/graph-database#GetStarted
+To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machine with multi-hop SSH access), follow the instructions below.
 
-1. Install Reactome graph database and graph database dump file
-2. Download and install the Neo4j V4
-        Version used for this repository: **neo4j-community-4.4.40**
-3. Install the Graph Database for Mac/Linux users.
-4. Extract the **Reactome.graph.db** after downloading.
-5. Move **graph.db** folder to ``/path/to/neo4j/data/databases/``
-6. Rename the folder to the graph.db.
-7. Config Neo4j
-8. Edit Neo4j confirmation file in ``/path/to/neo4j/conf/neo4j.conf``
-9. It's recommended having all these settings:
-```
-    dbms.default_database=graph.db
-    dbms.recovery.fail_on_missing_files=false
-    unsupported.dbms.tx_log.fail_on_corrupted_log_files=false
-```
-10. Run ``./path//neo4j/bin/neo4j-admin load --force --from=/path/reactome.graphdb.dump --database=graph.db``
-11. Start Neo4j ``./path/to/neo4j/bin/neo4j start``
+### Requirements
 
-**Note:** After starting neo4j, you can listen in on the neo4j port from DGX by running the following command (make sure you are in the directory where neo4j is in)
-``ssh -L 7474:localhost:7474 -L 7687:localhost:7687``
+- Neo4j **v4.x** (version used in this repo: **neo4j-community-4.4.40**)
+- Reactome graph database dump file (`reactome.graphdb.dump`)
+
+---
+
+### Installation Steps
+
+1. **Download Neo4j Community Edition v4.4.40**  
+   From the [Neo4j Download Center](https://neo4j.com/download-center/#community)
+
+2. **Download the Reactome Graph Database Dump**  
+   - Visit [https://reactome.org/download-data](https://reactome.org/download-data)
+   - Look for the **Graph Database** section
+   - Download the `reactome.graphdb.dump` file
+
+3. **Install and Configure the Database**
+   - Load the dump file into Neo4j:
+     ```bash
+     ./path/to/neo4j/bin/neo4j-admin load --force --from=/path/to/reactome.graphdb.dump --database=graph.db
+     ```
+   - Move the `graph.db` folder to:
+     ```
+     /path/to/neo4j/data/databases/
+     ```
+   - Ensure the folder is named exactly `graph.db`
+
+4. **Configure Neo4j Settings**
+   - Edit the configuration file at:
+     ```
+     /path/to/neo4j/conf/neo4j.conf
+     ```
+   - Recommended settings:
+     ```properties
+     dbms.default_database=graph.db
+     dbms.recovery.fail_on_missing_files=false
+     unsupported.dbms.tx_log.fail_on_corrupted_log_files=false
+     ```
+
+5. **Start the Neo4j Server**
+   ```bash
+   ./path/to/neo4j/bin/neo4j start
+
+
+**Note:** If accessing remotely, use SSH port forwarding from the machine where Neo4j is installed:
+``ssh -L 7474:localhost:7474 -L 7687:localhost:7687 <username>@<remote-host>
+``
 
 Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
 
