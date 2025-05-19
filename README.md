@@ -139,7 +139,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
    #### Option B: Use the Extracted Graph Folder
 
-   - Download and extract the **graph folder archive** (e.g., `Reactome.graph.db.tar`)
+   - Download and extract the **graph folder archive** (`reactome.graph.db.tgz`)
    - Move the extracted `graph.db` folder to:
      ```
      /path/to/neo4j/data/databases/
@@ -191,7 +191,8 @@ Information on how to query reactome database using Neo4j can be found here: htt
         ```
 
    6. **When done, Stop Neo4j**
-      ```./path/to/neo4j/bin/neo4j stop``
+      ```bash
+      ./path/to/neo4j/bin/neo4j stop
 
 ## Acknowledgments
 
