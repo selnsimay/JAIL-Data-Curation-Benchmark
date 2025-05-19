@@ -38,7 +38,7 @@ JAIL-Data-Curation-Benchmark/
 │   ├── 20240823_LLMeval_test_deepeval-checkpoint.ipynb
 │   ├── 20241007_GOterm_Information_Dataset_Dictionary.ipynb
 │   ├── 20241017Gene_Dataset.ipynb
-│   └── 20250219Gene_Reactions_Dataset.ipynb # (or a .py script, potentially in scripts/)
+│   └── 20250219Gene_Reactions_Dataset.ipynb 
 │
 ├── scripts/
 │   └── 20250404GeneInfo_DataFormatting.py
