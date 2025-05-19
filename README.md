@@ -17,7 +17,7 @@ The core aim of the JAIL-Data-Curation-Benchmark is to:
 *   **Prepare Data for LLM Training:** Transform curated data into formats suitable for supervised fine tuning, such as question-answer pairs.
 
 ## Recommended Directory Structure
-To ensure the scripts and notebooks run as intended with their current relative file paths (e.g., `../data/some_file.json`), the following directory structure is recommended at the root of your project:
+The following directory structure is recommended at the root of your project:
 ```
 JAIL-Data-Curation-Benchmark/
 ├── files/                
