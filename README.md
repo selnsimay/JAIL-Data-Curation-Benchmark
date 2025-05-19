@@ -141,6 +141,7 @@ Neo4j setup and Reactome database can be found here: https://reactome.org/dev/gr
         USERNAME="your_neo4j_username"
         PASSWORD="your_neo4j_password"
         ```
+
 Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
 
 12. When done, Stop Neo4j ``./path/to/neo4j/bin/neo4j stop``
