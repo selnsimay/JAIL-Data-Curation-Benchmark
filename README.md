@@ -136,6 +136,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
      ```bash
      ./path/to/neo4j/bin/neo4j-admin load --force --from=/path/to/reactome.graphdb.dump --database=graph.db
      ```
+   ---
 
    #### Option B: Use the Extracted Graph Folder
 
@@ -145,8 +146,6 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
      /path/to/neo4j/data/databases/
      ```
    - If a `graph.db` folder already exists, remove or rename it before replacing.
-
----
 
 3. **Install and Configure the Database**
    - Load the dump file into Neo4j:
