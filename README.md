@@ -134,9 +134,17 @@ Neo4j setup and Reactome database can be found here: https://reactome.org/dev/gr
 **Note:** After starting neo4j, you can listen in on the neo4j port from DGX by running the following command (make sure you are in the directory where neo4j is in)
 ``ssh -L 7474:localhost:7474 -L 7687:localhost:7687``
 
+**Note:** Create a `.env` file in the **root directory** of the `JAIL-Data-Curation-Benchmark` project with your Neo4j credentials:
+        ```env
+        # JAIL-Data-Curation-Benchmark/.env
+        URI="bolt://your_neo4j_host:7687"
+        USERNAME="your_neo4j_username"
+        PASSWORD="your_neo4j_password"
+        ```
+Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
+
 12. When done, Stop Neo4j ``./path/to/neo4j/bin/neo4j stop``
 
-Information on how to query reactome database using Neo4j can be found here: https://reactome.org/dev/graph-database/extract-participating-molecules#retrieving-reactions
 ## Acknowledgments
 
 This project builds upon public biological resources and tools including:
