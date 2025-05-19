@@ -128,7 +128,7 @@ To run Reactome queries locally or remotely (e.g., from DGX, Andes, or any machi
 
 2. **Choose One of the Following Methods to Load Reactome Data**
 
-   #### Option A: Load from a Dump File (Recommended)
+   #### Option A: Load from a Dump File
 
    - Download the latest **graph database dump** from:  
      [https://reactome.org/download-data](https://reactome.org/download-data)
