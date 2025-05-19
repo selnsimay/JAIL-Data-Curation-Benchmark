@@ -50,7 +50,7 @@ JAIL-Data-Curation-Benchmark/
 ### Notebooks
 1. **`notebooks/20240823_LLMeval_test_deepeval-checkpoint.ipynb`**
     *   **Purpose:** To demonstrate and test the DeepEval framework for LLM evaluation.
-    *   **Description:** Sets up a custom Llama 3.1 70B model and uses DeepEval's `HallucinationMetric`. This notebook is more self-contained for its example but could be adapted to use the curated datasets.
+    *   **Description:** Sets up a custom Llama 3.1 8B model and uses DeepEval's `HallucinationMetric`, `Faithfulness Metric` ,and `Bias Metric`. This notebook is more self-contained for its example but could be adapted to use the curated datasets.
     *   **Status:** "Currently on pause."
 
 2. **`notebooks/20241007_GOterm_Information_Dataset_Dictionary.ipynb`**
